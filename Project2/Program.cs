@@ -55,6 +55,13 @@ namespace Project2
 		}
 
 
+		/// <summary>
+		/// Displays instructions to the user
+		/// </summary>
+		/// <param name="aName">the name of the user</param>
+		/// <param name="aAccount">the account the user is working with</param>
+		/// <param name="aInterestRate">the interest rate of the account</param>
+		/// <returns>a string input by the user indicating the action to take</returns>
 		private static string GetAction(string aName, Account aAccount, int aInterestRate)
 		{
 			// greeting and instructions

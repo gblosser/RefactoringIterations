@@ -5,7 +5,7 @@
 - Added AccountRepository to Models.
 	- provides a mechanism to store/retrieve an account. Needed because we don't know if the consuming application will maintain state.
 		(this particular example maintains AccountRepository as a singleton throughout the life of the application so we don't need 
-		a method to store the account.)
+		another method, like a database, to store the account.)
 
 - Console application is replaced with REST API
 	- no changes were made in any model classes.

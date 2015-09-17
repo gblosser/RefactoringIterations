@@ -2,7 +2,7 @@
 
 - Project2/model was copied to Project3/Models
 
-- Added AccountRepository to Models.
+- Added AccountRepository and IAccountRepository to Models.
 	- provides a mechanism to store/retrieve an account. Needed because we don't know if the consuming application will maintain state.
 		(this particular example maintains AccountRepository as a singleton throughout the life of the application so we don't need 
 		another method, like a database, to store the account.)

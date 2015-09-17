@@ -16,13 +16,13 @@ namespace Project1
 
 			do
 			{
-				// greeting and instructions
+				// greeting and command instructions
 				Console.WriteLine("What would you like to do {0}:", aName);
 				Console.WriteLine("Balance is ${0:C}", aBalance);
 				Console.WriteLine("Interest is 5% and is calculated on the balance every third transaction");
 				Console.WriteLine("(D)eposit, (W)ithdrawal, Get (B)alance, (L)ist actions for this session, E(X)it? (not case sensitive)");
 
-				// read console
+				// read console to get command
 				var aAction = Console.ReadLine();
 
 				if (string.IsNullOrEmpty(aAction))
@@ -78,10 +78,10 @@ namespace Project1
 					// adjust the balance
 					aBalance -= aAmount;
 					// decide to apply interest
-					if (aTransactionCount%3 == 0)
+					if (aTransactionCount % 3 == 0)
 					{
-						var aInterest = aBalance*.05m;
-						aBalance = aBalance*1.05m;
+						var aInterest = aBalance * .05m;
+						aBalance = aBalance * 1.05m;
 						aEvents.Add($"Interest\tAmount:{aInterest:C}\tBalance:{aBalance:C}");
 					}
 					aEvents.Add($"Withdrawal\tAmount:{aAmount:C}\tBalance:{aBalance:C}");

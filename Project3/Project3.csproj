@@ -58,6 +58,10 @@
       <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Moq, Version=4.2.1507.118, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -147,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Tests\Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -199,6 +202,9 @@
     <Compile Include="Models\InterestCalculator.cs" />
     <Compile Include="Models\WithdrawalException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Controllers\AccountControllerTest.cs" />
+    <Compile Include="Tests\Controllers\DepositControllerTest.cs" />
+    <Compile Include="Tests\Controllers\WithdrawalControllerTest.cs" />
     <Compile Include="Tests\Models\AccountRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>

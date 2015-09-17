@@ -1,5 +1,12 @@
 ﻿Additions/Changes from Project2 to Project3
 
+***
+	You'll see there is a lot of "extra" stuff in this project.  A production version of a Web API project will usually be stripped
+	down to the bare essentials.  You would not normally keep your domain (Models folder) in the same project/solution as the Web API
+	code.  If this was product-level code then you could expect there would not be any markup-related code.  Tests may be more
+	manageable in another project as well.
+***
+
 - Project2/model was copied to Project3/Models
 
 - Added AccountRepository and IAccountRepository to Models.

@@ -206,6 +206,7 @@
     <Compile Include="Tests\Controllers\DepositControllerTest.cs" />
     <Compile Include="Tests\Controllers\WithdrawalControllerTest.cs" />
     <Compile Include="Tests\Models\AccountRepositoryTest.cs" />
+    <Compile Include="Tests\Models\AccountTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

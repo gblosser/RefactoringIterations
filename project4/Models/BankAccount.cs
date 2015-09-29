@@ -1,4 +1,6 @@
-﻿namespace project4.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace project4.Models
 {
 	public class BankAccount
 	{

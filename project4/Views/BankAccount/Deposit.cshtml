@@ -1,0 +1,20 @@
+﻿@model project4.Models.BankAccount
+
+@{
+    ViewBag.Title = "Deposit";
+}
+
+<h2>Deposit</h2>
+@using (Html.BeginForm("Deposit", "BankAccount", FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+{
+	<div class="row">
+		$<input type="number" name="amount" min="0" max="99999999999999" step="0.01" size="4"
+		        title="CDA Currency Format - no dollar sign and no comma(s) - cents (.##) are optional"/>
+	</div>
+	<div class="row">
+		<input class="col-md-1" type="submit" value="Submit"/>
+		<!--<input class="col-md-1" type="submit" value="Cancel"/>-->
+		@Html.ActionLink("Cancel", "Index", "BankAccount", null, new {@class = "col-md-1"})
+	</div>
+}
+

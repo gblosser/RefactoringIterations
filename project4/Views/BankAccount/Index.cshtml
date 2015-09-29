@@ -1,0 +1,13 @@
+﻿@model project4.Models.BankAccount
+
+@{
+    ViewBag.Title = "Bank Account";
+}
+
+<h2>Bank Account</h2>
+<h4>Balance: @($"{@Model.Balance:C}") </h4>
+<div>
+	<span class="btn btn-default btn-lg">@Html.ActionLink("Deposit", "Deposit", "BankAccount")</span>
+	<span class="btn btn-default btn-lg">@Html.ActionLink("Withdrawal", "Withdrawal", "BankAccount")</span>
+</div>
+
